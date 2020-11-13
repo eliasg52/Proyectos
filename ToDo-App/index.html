@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>To-Do App</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar-content">
+        <!-- Coloco la clase navbar al contenedor padre para modificar los hijos. En este caso h1 y button -->
+        <h1>To-Do Applicattion</h1>
+        <button class="btn-dark-mode">
+          <i class="far fa-moon"></i>
+          Modo Oscuro
+        </button>
+      </div>
+    </nav>
+
+    <header class="container add-task my-2">
+      <form>
+        <i class="fas fa-tasks"></i>
+        <input type="text" placeholder="Ingresar tarea" />
+      </form>
+      <button>+</button>
+    </header>
+
+    <main class="container-s grid my-2">
+      <article class="tasks">
+        <div class="task-title">
+          <h2>Tareas a hacer</h2>
+          <i class="fas fa-trash-alt"></i>
+        </div>
+        <div>
+          <ol>
+            <div class="task-list">
+              <li class="mr-2">
+                Correr
+                <i class="fas fa-check"></i>
+                <i class="fas fa-times"></i>
+              </li>
+            </div>
+          </ol>
+        </div>
+      </article>
+
+      <article class="tasks">
+        <div class="task-title">
+          <h2>Tareas terminadas</h2>
+          <i class="fas fa-trash-alt"></i>
+        </div>
+        <div class="task-content">
+          <ul class="task-list">
+            <li>Cortarme el pelo</li>
+          </ul>
+        </div>
+      </article>
+    </main>
+
+    <script src="js/dark-mode.js"></script>
+  </body>
+</html>

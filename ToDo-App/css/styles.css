@@ -1,0 +1,129 @@
+/* :root {
+  --color-bg: #fafafa;
+  --color-bg-secondary: #ffffff;
+  --color-text: #000000;
+}
+ */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  --color-bg: #ffffee;
+  --color-bg-secondary: #ffffff;
+  --color-text: #000000;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body.dark-mode {
+  --color-bg: #212e37;
+  --color-bg-secondary: #2b3743;
+  --color-text: #ffffff;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+
+.container-s {
+  margin-right: auto;
+  margin-left: auto;
+  width: 70%;
+  height: 20rem;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--color-bg-secondary);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-dark-mode {
+  background-color: var(--color-bg-secondary);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+  color: var(--color-text);
+}
+
+.btn-dark-mode:hover {
+  opacity: 0.6;
+}
+
+/* ESPACIADOS */
+/*MARGEN ARRIBA Y ABAJO DE 2 UNIDADES, EN ESTE CASO LA UNIDAD A USAR ES REM*/
+.my-2 {
+  margin-top: 2rem; /* 2*16pixels */
+}
+
+.px-2 {
+  padding-left: 2rem;
+}
+
+.mr-2 {
+  margin-right: 1rem;
+}
+
+/* AGREGAR TAREA */
+.add-task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN */
+/* CAJAS TAREAS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.tasks {
+  background-color: var(--color-bg-secondary);
+  border-radius: 0.35rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.tasks h2 {
+  margin-left: 1rem;
+}
+
+/* .task-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+} */
+
+.task-title {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.task-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas {
+  cursor: pointer;
+}
