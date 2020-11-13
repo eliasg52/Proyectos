@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  --color-bg: #ffffee;
+  --color-bg: #00aae4;
   --color-bg-secondary: #ffffff;
   --color-text: #000000;
   font-family: 'Nunito Sans', sans-serif;
@@ -81,12 +81,20 @@ body.dark-mode {
 }
 
 /* AGREGAR TAREA */
-.add-task {
+.form-add-task {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.form-add-task input {
+  border: none;
+  outline: none;
+  border-radius: 0.35rem;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+  padding: 0.5rem;
+}
 /* MAIN */
 /* CAJAS TAREAS */
 .grid {
@@ -126,4 +134,13 @@ body.dark-mode {
 
 .fas {
   cursor: pointer;
+}
+
+.fa-plus-circle {
+  margin-left: 0.3rem;
+}
+
+.fa-tasks {
+  margin-right: 0.1rem;
+  cursor: unset;
 }
