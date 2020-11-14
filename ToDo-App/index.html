@@ -32,34 +32,19 @@
     <header class="container form-add-task my-2">
       <form>
         <i class="fas fa-tasks"></i>
-        <input type="text" placeholder="Ingresar tarea" />
+        <input type="text" id="input-task" placeholder="Ingresar tarea" />
       </form>
-      <i class="fas fa-plus-circle"></i>
+      <i id="icon-add-task" class="fas fa-plus-circle"></i>
     </header>
 
     <main class="container-s grid my-2">
       <article class="tasks">
         <div class="task-title">
           <h2>Tareas a hacer</h2>
-          <i class="fas fa-trash-alt"></i>
+          <i id="delete-list" class="fas fa-trash-alt"></i>
         </div>
         <div>
-          <ol>
-            <div class="task-list">
-              <li class="mr-2">Correr</li>
-              <div>
-                <i class="fas fa-check mr-2"></i>
-                <i class="fas fa-times"></i>
-              </div>
-            </div>
-            <div class="task-list">
-              <li class="mr-2">Correr</li>
-              <div>
-                <i class="fas fa-check mr-2"></i>
-                <i class="fas fa-times"></i>
-              </div>
-            </div>
-          </ol>
+          <ol id="tasks-list"></ol>
         </div>
       </article>
 
@@ -69,13 +54,14 @@
           <i class="fas fa-trash-alt"></i>
         </div>
         <div class="task-content">
-          <ul class="task-list">
+          <!--  <ul class="task-list">
             <li>Cortarme el pelo</li>
-          </ul>
+          </ul> -->
         </div>
       </article>
     </main>
 
     <script src="js/dark-mode.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

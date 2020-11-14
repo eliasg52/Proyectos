@@ -37,7 +37,7 @@ body.dark-mode {
 .container-s {
   margin-right: auto;
   margin-left: auto;
-  width: 70%;
+  width: 60%;
   height: 20rem;
 }
 
@@ -76,10 +76,13 @@ body.dark-mode {
   padding-left: 2rem;
 }
 
-.mr-2 {
-  margin-right: 0.7rem;
+.mr-1 {
+  margin-right: 1rem;
 }
 
+.ml-3 {
+  margin-left: 2rem;
+}
 /* AGREGAR TAREA */
 .form-add-task {
   display: flex;
@@ -128,9 +131,11 @@ body.dark-mode {
 
 .task-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
+
+/* ICONOS SVG */
 
 .fas {
   cursor: pointer;
