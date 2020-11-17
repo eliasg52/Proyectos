@@ -44,34 +44,6 @@ function insertarElementos(valorInput) {
   );
 }
 
-/* function crearIntegrantes(cantidadIntegrantes) {
-  if (cantidadIntegrantes > 0) {
-    mostrarBotonCalculo();
-  } else {
-    resetear();
-  }
-
-  for (let i = 0; i < cantidadIntegrantes; i++) {
-    crearIntegrante(i);
-  }
-}
-
-function crearIntegrante(indice) {
-  const $div = document.createElement('div');
-  $div.className = 'integrante';
-
-  const $label = document.createElement('label');
-  $label.textContent = 'Edad del integrante #: ' + (indice + 1);
-  const $input = document.createElement('input');
-  $input.type = 'number';
-
-  $div.appendChild($label);
-  $div.appendChild($input);
-
-  const $integrantes = document.querySelector('#integrantes');
-  $integrantes.appendChild($div);
-} */
-
 function borrarListaCompleta(tareas) {
   for (let i = 0; i < tareas.length; i++) {
     $listaTareas.removeChild(tareas[i]);
