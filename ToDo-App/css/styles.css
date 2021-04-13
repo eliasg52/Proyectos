@@ -32,6 +32,7 @@ body.dark-mode {
   margin-right: auto;
   margin-left: auto;
   width: 80%;
+  margin-top: -2rem;
 }
 
 .container-s {
@@ -103,6 +104,7 @@ body.dark-mode {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 3.2rem;
 }
 
 .form-add-task input {
@@ -175,4 +177,26 @@ li {
 
 .hidden {
   opacity: 0;
+}
+
+/*Footer*/
+
+.footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  /*   background-color: red; */
+}
+
+.iconos-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
+  gap: 0.7rem;
+}
+
+.iconos {
+  cursor: pointer;
 }
