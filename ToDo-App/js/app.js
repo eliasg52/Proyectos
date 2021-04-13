@@ -90,5 +90,15 @@ function tareaTerminada(iconosCheck, indiceId) {
 }
 
 function advertencia() {
-  $$parrafo.classList.remove('hidden');
+  $parrafo.classList.remove('hidden');
 }
+
+function horaActual() {
+  const fecha = new Date();
+  const horaActual = fecha.toLocaleTimeString();
+
+  const parrafoFecha = document.querySelector('#date');
+  parrafoFecha.textContent = horaActual;
+}
+
+setInterval(horaActual, 1000);

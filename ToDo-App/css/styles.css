@@ -52,6 +52,17 @@ body.dark-mode {
   align-items: center;
 }
 
+.nav-date-language {
+  display: flex;
+  justify-content: space-between;
+  height: 1.5rem;
+  align-items: center;
+  background-color: var(--color-bg-secondary);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
 .btn-dark-mode {
   background-color: var(--color-bg-secondary);
   border: none;
@@ -158,11 +169,10 @@ li {
   padding: 0.2rem;
   border-radius: 0.35rem;
   transition: opacity 0.5s linear;
-  transform: translate(0);
   opacity: 1;
+  cursor: default;
 }
 
 .hidden {
-  transform: translate(9999px);
   opacity: 0;
 }
