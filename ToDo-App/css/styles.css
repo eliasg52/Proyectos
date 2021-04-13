@@ -83,6 +83,10 @@ body.dark-mode {
 .ml-3 {
   margin-left: 2rem;
 }
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
 /* AGREGAR TAREA */
 .form-add-task {
   display: flex;
@@ -146,4 +150,19 @@ li {
 .fa-tasks {
   margin-right: 0.1rem;
   cursor: unset;
+}
+
+.warning-text {
+  margin-left: 0.5rem;
+  background-color: red;
+  padding: 0.2rem;
+  border-radius: 0.35rem;
+  transition: opacity 0.5s linear;
+  transform: translate(0);
+  opacity: 1;
+}
+
+.hidden {
+  transform: translate(9999px);
+  opacity: 0;
 }

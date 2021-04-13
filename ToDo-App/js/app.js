@@ -3,6 +3,7 @@ const $listaTareasTerminadas = document.querySelector('#finished-tasks-list');
 const $Input = document.querySelector('#input-task');
 const $iconoAgregarTarea = document.querySelector('#icon-add-task');
 const $iconoBorrarLista = document.querySelector('#delete-list');
+const $parrafo = document.querySelector('.warning-text');
 let $iconoCheck;
 let indiceId = 0;
 
@@ -11,14 +12,14 @@ $iconoAgregarTarea.onclick = function () {
   if (valorInput === '') {
     advertencia();
   } else {
+    $parrafo.classList.add('hidden');
     insertarElementos(valorInput, indiceId);
     $Input.value = ''; //PONE EL VALOR DEL INPUT VACIO NUEVAMENTE DSP DE AGREGAR UNA TAREA
     indiceId++; //SUMA 1 AL INDICE PARA PODER ASIGNAR VALORES DIFERENTES A LAS TAREAS
     $iconoCheck = document.querySelectorAll('.fa-check');
     console.log($iconoCheck);
     document.querySelector('#tasks-list'); //ACTUALIZO LA LISTA AL MOMENTO DE AGREGAR UNA TAREA
-    console.log($listaTareas.textContent);
-    tareaTerminada($iconoCheck, indiceId);
+    /*   tareaTerminada($iconoCheck, indiceId); ARREGLAR*/
   }
 };
 
@@ -30,11 +31,15 @@ function asd() {
 
 $Input.addEventListener('keypress', function (e) {
   const valorInput = $Input.value;
+
   if (e.key === 'Enter') {
     if (e.currentTarget.value !== '') {
+      $parrafo.classList.add('hidden'); //IMPLEMENTAR EL TOGGLE
       insertarElementos(valorInput, indiceId);
       e.currentTarget.value = '';
       indiceId++;
+    } else {
+      advertencia();
     }
   } else {
     return '';
@@ -51,7 +56,7 @@ function insertarElementos(valorInput, indice) {
   $listaTareas.insertAdjacentHTML(
     'beforeend',
     `<div class="task-list" id="task${indice + 1}">
-        <li class="ml-3">${valorInput}</li>
+        <li class="ml-3 mb-1">${valorInput}</li>
             <div>
                 <i class="fas fa-check mr-1" id="check${indice + 1}"></i>
                 <i class="fas fa-times mr-1"></i>
@@ -85,5 +90,5 @@ function tareaTerminada(iconosCheck, indiceId) {
 }
 
 function advertencia() {
-  console.log('Introduce algo por favor');
+  $$parrafo.classList.remove('hidden');
 }
