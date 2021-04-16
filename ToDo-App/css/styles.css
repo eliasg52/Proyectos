@@ -64,6 +64,10 @@ body.dark-mode {
   width: 100%;
 }
 
+.date {
+  font-style: oblique;
+}
+
 .btn-dark-mode {
   background-color: var(--color-bg-secondary);
   border: none;

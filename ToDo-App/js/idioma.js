@@ -14,8 +14,6 @@ espaniol.onclick = function () {
   this.disabled = true;
   ingles.disabled = false;
   let titulo = document.querySelector('#app-title');
-  let botonModoOscuro = (document.querySelector('#span').textContent =
-    'Modo Oscuro');
   titulo.textContent = 'Aplicación de Tareas';
   $Input.placeholder = 'Ingresar tarea';
   tareasParaHacer.textContent = 'Tareas a hacer';
@@ -27,8 +25,6 @@ ingles.onclick = function () {
   espaniol.disabled = false;
   this.disabled = true;
   let titulo = document.querySelector('#app-title');
-  let botonModoOscuro = (document.querySelector('#span').textContent =
-    'Dark Mode');
   titulo.textContent = 'To-Do-App';
   $Input.placeholder = 'Enter Task';
   tareasParaHacer.textContent = 'Tasks to do';
