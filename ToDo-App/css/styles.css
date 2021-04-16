@@ -14,18 +14,18 @@ html {
 }
 
 body {
-  --color-bg: #00aae4;
-  --color-bg-secondary: #ffffff;
-  --color-text: #000000;
+  --color-bg: #212e37;
+  --color-bg-secondary: #2b3743;
+  --color-text: #ffffff;
   font-family: 'Nunito Sans', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text);
 }
 
 body.dark-mode {
-  --color-bg: #212e37;
-  --color-bg-secondary: #2b3743;
-  --color-text: #ffffff;
+  --color-bg: #00aae4;
+  --color-bg-secondary: #ffffff;
+  --color-text: #000000;
 }
 
 .container {
@@ -68,14 +68,24 @@ body.dark-mode {
   font-style: oblique;
 }
 
+.language-button {
+  background-color: var(--color-bg-secondary);
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  background-color: orange;
+  font-weight: bold;
+}
+
 .btn-dark-mode {
   background-color: var(--color-bg-secondary);
-  border: none;
+  border-style: ridge;
   outline: none;
   cursor: pointer;
   opacity: 1;
   transition: 0.3s;
   color: var(--color-text);
+  border-radius: 0.35rem;
 }
 
 .btn-dark-mode:hover {
@@ -206,8 +216,8 @@ li {
 }
 
 .iconos-container a:visited {
-  color: white;
+  color: orange;
 }
 .iconos-container a:link {
-  color: white;
+  color: orange;
 }
