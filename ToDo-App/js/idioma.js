@@ -9,8 +9,6 @@ const programadoPor = document.querySelector('#coded-by');
 
 const espaniol = document.getElementById('spanish-language');
 const ingles = document.getElementById('english-language');
-console.log(espaniol);
-console.log(ingles);
 
 espaniol.onclick = function () {
   this.disabled = true;
