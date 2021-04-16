@@ -16,7 +16,7 @@ espaniol.onclick = function () {
   let titulo = document.querySelector('#app-title');
   let botonModoOscuro = (document.querySelector('#span').textContent =
     'Modo Oscuro');
-  titulo.textContent = 'App de Tareas';
+  titulo.textContent = 'Aplicación de Tareas';
   $Input.placeholder = 'Ingresar tarea';
   tareasParaHacer.textContent = 'Tareas a hacer';
   tareasTerminadas.textContent = 'Tareas terminadas';
