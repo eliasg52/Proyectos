@@ -140,7 +140,7 @@ body.dark-mode {
   align-items: center;
 }
 
-.task-list {
+.task-style {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,7 +187,6 @@ li {
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
-  /*   background-color: red; */
 }
 
 .iconos-container {
@@ -197,6 +196,14 @@ li {
   gap: 0.7rem;
 }
 
-.iconos {
-  cursor: pointer;
+.iconos:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.iconos-container a:visited {
+  color: white;
+}
+.iconos-container a:link {
+  color: white;
 }

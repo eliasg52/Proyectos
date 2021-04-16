@@ -4,10 +4,10 @@ $btnDark.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
 
   if (document.body.className === 'dark-mode') {
-    $btnDark.innerHTML = `<i class="far fa-sun"></i> Modo Claro
+    $btnDark.innerHTML = `Modo Claro<i class="far fa-sun"></i>
     `;
   } else {
-    $btnDark.innerHTML = `<i class="far fa-moon"></i> Modo Oscuro
+    $btnDark.innerHTML = `Modo Oscuro<i class="far fa-moon"></i>
     `;
   }
 });

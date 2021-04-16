@@ -19,17 +19,20 @@
   </head>
   <body>
     <div class="nav-date-language">
-      <p>asd</p>
-      <p id="date">asd2</p>
+      <div id="language">
+        <button id="spanish-language">ES</button>
+        <button id="english-language">EN</button>
+      </div>
+      <p id="date"></p>
     </div>
     <nav class="navbar">
       <div class="container navbar-content">
         <!-- Coloco la clase navbar al contenedor padre para modificar los hijos. En este caso h1 y button -->
-        <h1>To-Do Applicattion</h1>
+        <h1 id="app-title">Cosas a hacer</h1>
 
         <button class="btn-dark-mode">
+          <span id="span">Modo Oscuro</span>
           <i class="far fa-moon"></i>
-          Modo Oscuro
         </button>
       </div>
     </nav>
@@ -51,7 +54,7 @@
     <main class="container-s grid my-2">
       <article class="tasks">
         <div class="task-title">
-          <h2>Tareas a hacer</h2>
+          <h2 id="title-to-do">Tareas a hacer</h2>
           <i id="delete-list" class="fas fa-trash-alt"></i>
         </div>
         <div>
@@ -61,8 +64,8 @@
 
       <article class="tasks">
         <div class="task-title">
-          <h2>Tareas terminadas</h2>
-          <i class="fas fa-trash-alt"></i>
+          <h2 id="title-finished">Tareas terminadas</h2>
+          <i id="delete-list-finished" class="fas fa-trash-alt"></i>
         </div>
         <div class="task-content">
           <ol id="finished-tasks-list"></ol>
@@ -72,17 +75,27 @@
 
     <footer>
       <div class="footer">
-        <p>Codeado por:</p>
-        <h3>Garcia Elias</h3>
+        <p id="coded-by">Codeado por:</p>
+        <h3 id="coder-name">Garcia Elias</h3>
       </div>
       <div class="iconos-container">
-        <i class="fab fa-linkedin fa-2x iconos"></i>
-        <i class="fab fa-github-square fa-2x iconos"></i>
-        <i class="fas fa-envelope fa-2x"></i>
+        <a href="https:/www.linkedin.com/in/eliasg52" target="_blank"
+          ><i class="fab fa-linkedin fa-2x iconos"></i
+        ></a>
+        <a href="https://github.com/eliasg52" target="_blank"
+          ><i class="fab fa-github-square fa-2x iconos"></i
+        ></a>
+        <a
+          href="mailto:eliasgarcia81@gmail.com"
+          target="_blank"
+          title="eliasgarcia81@gmail.com"
+          ><i class="fas fa-envelope fa-2x iconos"></i
+        ></a>
       </div>
     </footer>
 
     <script src="js/dark-mode.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/idioma.js"></script>
   </body>
 </html>
