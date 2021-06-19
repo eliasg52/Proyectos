@@ -35,6 +35,12 @@ body.dark-mode {
   margin-top: -2rem;
 }
 
+.container-s {
+  margin-right: auto;
+  margin-left: auto;
+  width: 60%;
+}
+
 /* NAVBAR */
 .navbar {
   background-color: var(--color-bg-secondary);
